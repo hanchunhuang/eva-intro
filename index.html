@@ -300,30 +300,28 @@ section{scroll-margin-top:64px;display:grid;gap:22px}
 .ylink b{display:block}
 .ylink small{color:var(--muted);font-size:.85rem}
 /* ===== 區塊區隔：每一段一個代表色 ===== */
-main > section[id]{--sec:var(--accent);position:relative;background:color-mix(in srgb,var(--sec) 5%,var(--paper));border:1px solid color-mix(in srgb,var(--sec) 22%,var(--line));border-top:8px solid var(--sec);border-radius:20px;padding:30px 28px 34px}
+main > section[id]{--sec:var(--accent);position:relative;background:color-mix(in srgb,var(--sec) 13%,var(--paper));border:2px solid color-mix(in srgb,var(--sec) 60%,transparent);border-left:12px solid var(--sec);border-radius:20px;padding:30px 30px 34px}
 #me{--sec:#2f5bd3}
 #store{--sec:#e07a1f}
-#why{--sec:#138a8a}
+#why{--sec:#0f9b9b}
 #practicum{--sec:#7a4fd6}
 #systems{--sec:#1f8a5b}
-#without{--sec:#c4462b}
-main > section[id] > .eyebrow{color:var(--sec);display:inline-flex;align-items:center;gap:8px;font-size:.9rem}
-main > section[id] > .eyebrow::before{content:"";width:22px;height:3px;border-radius:2px;background:var(--sec)}
-main > section[id] > h2{padding-bottom:12px;background:linear-gradient(var(--sec),var(--sec)) left bottom/64px 4px no-repeat}
-main > section[id] > h3{border-left:5px solid var(--sec);padding-left:12px;margin-top:10px}
-#practicum > h2 + .lead + .bf, #practicum > h2#pr-h{margin-top:0}
-#practicum > h2#pr-h{border-top:2px dashed color-mix(in srgb,var(--sec) 45%,transparent);padding-top:26px;margin-top:20px}
-main > section[id] .card,main > section[id] .adv,main > section[id] .sys-card,main > section[id] .role,main > section[id] .fact{border-color:color-mix(in srgb,var(--sec) 18%,var(--line))}
-nav.top a .n{display:inline-grid;place-items:center;width:1.5em;height:1.5em;border-radius:50%;color:#fff;font-size:.78rem;margin-right:6px}
+#without{--sec:#d0402a}
+main > section[id] > .eyebrow{justify-self:start;background:var(--sec);color:#fff;font-size:1rem;letter-spacing:.08em;padding:6px 16px;border-radius:999px}
+main > section[id] > h2{padding-bottom:12px;background:linear-gradient(var(--sec),var(--sec)) left bottom/90px 6px no-repeat;border-radius:0}
+main > section[id] > h3{border-left:6px solid var(--sec);padding-left:12px;margin-top:10px}
+#practicum > h2#pr-h{border-top:3px dashed var(--sec);padding-top:26px;margin-top:20px}
+main > section[id] .card,main > section[id] .adv,main > section[id] .sys-card,main > section[id] .role,main > section[id] .fact,main > section[id] .svc:not(.center){border-color:color-mix(in srgb,var(--sec) 30%,var(--line))}
+nav.top a .n{display:inline-grid;place-items:center;width:1.6em;height:1.6em;border-radius:50%;color:#fff;font-size:.8rem;margin-right:6px}
 nav.top a[href="#me"] .n{background:#2f5bd3}
 nav.top a[href="#store"] .n{background:#e07a1f}
-nav.top a[href="#why"] .n{background:#138a8a}
+nav.top a[href="#why"] .n{background:#0f9b9b}
 nav.top a[href="#practicum"] .n{background:#7a4fd6}
 nav.top a[href="#systems"] .n{background:#1f8a5b}
-nav.top a[href="#without"] .n{background:#c4462b}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) main > section[id]{background:color-mix(in srgb,var(--sec) 9%,var(--paper))}}
-:root[data-theme="dark"] main > section[id]{background:color-mix(in srgb,var(--sec) 9%,var(--paper))}
-@media (max-width:600px){main > section[id]{padding:22px 16px 26px;border-radius:14px}}
+nav.top a[href="#without"] .n{background:#d0402a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) main > section[id]{background:color-mix(in srgb,var(--sec) 16%,var(--paper))}}
+:root[data-theme="dark"] main > section[id]{background:color-mix(in srgb,var(--sec) 16%,var(--paper))}
+@media (max-width:600px){main > section[id]{padding:22px 14px 26px;border-left-width:8px;border-radius:14px}}
 .close{text-align:left;display:grid;gap:14px}
 .close .big{font-family:var(--display);font-size:clamp(1.4rem,3.5vw,1.9rem)}
 footer{color:var(--muted);font-size:.85rem;text-align:center;padding:24px 16px}
